@@ -1,0 +1,181 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+    padding: 10px;
+}
+
+.left-section,
+.middle-section,
+.right-section {
+    flex: 1;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.left-section,
+.middle-section {
+    border-right: 1px solid #ccc;
+}
+
+.left-section,
+.right-section {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 25%;
+}
+
+.middle-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-left: none;
+    border-right: 1px solid #ccc;
+    flex-basis: 50%;
+}
+
+.middle-inner {
+    align-items: center;
+}
+
+.right-section img,
+.left-section img {
+    max-width: 100%;
+    height: auto;
+}
+
+h2.main-title {
+    margin: 10px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+h2.main-title:before,
+h2.main-title:after {
+    position: absolute;
+    width: 42%;
+    height: 80px;
+    border-color: #000;
+    border-style: solid;
+    border-bottom: none;
+    content: ' ';
+}
+
+h2.main-title:before {
+    top: 15px;
+    left: 10px;
+    border-width: 1px 0 0 1px;
+}
+
+h2.main-title:after {
+    top: 15px;
+    right: 20px;
+    border-width: 1px 1px 0 0;
+}
+
+.pre-title {
+    color: rgb(201, 80, 80);
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-size: 0.83em;
+    font-weight: 600;
+}
+
+.sub-title {
+    font-size: 2.7em;
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.middle-section img {
+    width: 90%;
+    height: auto;
+}
+
+.middle-text {
+    text-align: center;
+    line-height: 1.6;
+    font-size: large;
+    margin-bottom: 0px;
+}
+
+.text-muted {
+    color: rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+    font-size: small;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.right-inner {
+    display: flex;
+}
+
+.left-section img {
+    height: 200px;
+    width: auto;
+}
+
+.right-section img {
+    width: 250px;
+    height: auto;
+}
+
+.box {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+}
+
+.product-title {
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+.newsletter-form {
+    display: flex;
+}
+
+input[type="email"] {
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    width: 70%;
+}
+
+.right-img {
+    margin: auto;
+}
+
+.signup-button {
+    background-color: rgb(241, 36, 36);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.signup-button:hover {
+    background-color: rgb(46, 9, 9);
+}
+
+.newsletter-main a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.muted {
+    color: rgba(0, 0, 0, 0.5);
+}
